@@ -749,11 +749,13 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: 140px;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
-
+.comming-soon{
+  aspect-ratio: 2;
+}
 .clients-item img:hover { filter: grayscale(0); }
 
 
@@ -1427,7 +1429,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img { width: 80px; }
+  .testimonials-avatar-box img { 
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
 
   .testimonials-item-title {
     margin-bottom: 10px;
